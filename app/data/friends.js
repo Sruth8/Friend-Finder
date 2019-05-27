@@ -4,16 +4,16 @@ var friends = [
         "name": "Captain James T Kirk",
         "photo": "http://www.badassoftheweek.com/kirk.jpg",
         "scores": [
-            5,
-            1,
-            4,
-            4,
-            5,
             1,
             2,
             5,
+            1,
+            3,
+            3,
+            2,
             4,
-            1
+            5,
+            1,
         ]
     },
 
@@ -22,16 +22,16 @@ var friends = [
         "name": "Captain Jean-luc Picard",
         "photo": "http://images2.fanpop.com/image/photos/12300000/Jean-Luc-Picard-jean-luc-picard-12366864-1659-2560.jpg",
         "scores": [
-            1,
-            5,
-            2,
             5,
             5,
-            2,
-            3,
-            2,
-            1,
-            2
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
         ]
     },
 

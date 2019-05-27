@@ -19,12 +19,12 @@
 // app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 // app.set("view engine", "handlebars");
 
-
+require('dotenv').config()
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || process.env.DEV_PORT || 5000;
 
 //create application/json parser
 var jsonParser = bodyParser.json()
