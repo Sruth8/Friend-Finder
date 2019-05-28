@@ -22,12 +22,14 @@
 require('dotenv').config()
 var express = require('express');
 var app = express();
+//var path = require("path");
 var bodyParser = require('body-parser');
+
 
 var PORT = process.env.PORT || process.env.DEV_PORT || 5000;
 
 //create application/json parser
-var jsonParser = bodyParser.json()
+//var jsonParser = bodyParser.json()
 
 //create application/x=www-form-urlencoded parser
 //var urlencodeParser = bodyParser.urlencoded({extended: false})
@@ -35,13 +37,13 @@ var jsonParser = bodyParser.json()
 //extended: true helps the front in and back it talk to each other
 app.use(express.urlencoded({ extended: true }));
 
-// parse various different custom JSON types as JSON
+// parse JSON types
 app.use(bodyParser.json({ type: 'application/*+json' }))
 
-//parse son custom thing into a Buffer
+//parse stuff in the Buffer
 app.use(bodyParser.raw({ type: 'application/vnd.custon-type' }))
 
-//parse an HTML body into a string
+//parse HTML to string type
 app.use(bodyParser.text({ type: 'text/html' }))
 
 // these routes give  the server a map of how to respond

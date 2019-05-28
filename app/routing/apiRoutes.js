@@ -1,6 +1,7 @@
 var friends = require("../data/friends.js");
 
 module.exports = function (app) {
+    //I need this rout to view all my friends
     app.get("/api/friends", function (req, res) {
         res.json(friends);
     });
@@ -9,16 +10,16 @@ module.exports = function (app) {
         var match = {
             name: "",
             photo: "",
-            friendDifference: 1000  //this is used to track the difference there answers
+            diffAnswers: 1000  //this is used to track the difference in there answers
         };
 
         console.log(req.body);
 
         //the users data is parsed here
-        var userData = req.body;
-        var userScores = userData.scores;
+        var enter = req.body;
+        var seeker = enter.scores;
 
-        console.log(userScores);
+        console.log(seeker);
 
         // the difference is calculated with the users scores and each user in the database
         var totalDifference = 0;
@@ -33,28 +34,28 @@ module.exports = function (app) {
             totalDifference = 0;
 
 
-            //this will loop through all the scores
+            //this will loop through all the scores 
             for (var s = 0; s < friends[f].scores.length; s++) {
 
-                //this will calculat the scores and then sum them up in totalDifference. Math.abs means it returns absolute value which means
+                //this will calculate the scores and then sum them up in totalDifference. Math.abs means it returns absolute value which means
                 // if it's negative it turns it postive and if it's postive it stays the same
-                totalDifference += Math.abs(parseInt(userScores[s]) - parseInt(friends[f].scores[s])); 
+                totalDifference += Math.abs(parseInt(seeker[s]) - parseInt(friends[f].scores[s])); 
                   
                 //This will reset the match. Should reset to a new friend
-                if (totalDifference <= match.friendDifference) {
+                if (totalDifference <= match.diffAnswers) {
 
-                    
+                    //
                     match.name = friends[f].name;
                     match.photo = friends[f].photo;
-                    match.friendDifference = totalDifference;
+                    match.diffAnswers = totalDifference;
 
                 }
 
             }
 
         }
-//this will push the user's datat in the userData. 
-        friends.push(userData);
+//this will push the user's data in the enter. 
+        friends.push(enter);
 //this is be used in the html. this will return a JSON to the match
         res.json(match);
 

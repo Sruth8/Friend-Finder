@@ -22,16 +22,16 @@
 
     <h3><strong>Let us learn more about you.</strong></h3>
     <h4>Name (required)</h4>
-    <input type="text" name="" id="name" class="form-control" required>
+    <input id="name" type="text" name="" class="profile" required>
 
     <h4>Link to Photo (required)</h4>
-    <input type="text" name="" id="photo" class="form-control" required>
+    <input id="photo" type="text" name="" class="profile" required>
 
     <hr>
 
     <h3><strong>Question 1</strong></h3>
     <h4>What did you study in college?</h4>
-    <select data-placeholder="" class="chosen-select" id="q1">
+    <select data-placeholder="" class="picked" id="q1">
       <option value="0"></option>
       <option value="1">1. Theater</option>
       <option value="2">2. Physics</option>
@@ -46,7 +46,7 @@
 
     <h3><strong>Question 2</strong></h3>
     <h4>Which accessory do you prefer?</h4>
-    <select data-placeholder="" class="chosen-select" id="q2">
+    <select data-placeholder="" class="picked" id="q2">
       <option value="0"></option>
       <option value="1">1. Sunglasses</option>
       <option value="2">2. Wrist watch</option>
@@ -61,7 +61,7 @@
 
     <h3><strong>Question 3</strong></h3>
     <h4>Which Star Trek series did you most enjoy?</h4>
-    <select data-placeholder="" class="chosen-select" id="q3">
+    <select data-placeholder="" class="picked" id="q3">
       <option value="0"></option>
       <option value="1">1. The Original Series</option>
       <option value="2">2. The Nex Generation</option>
@@ -76,7 +76,7 @@
 
     <h3><strong>Question 4</strong></h3>
     <h4>Which beverage do you find most refreshing?</h4>
-    <select data-placeholder="" class="chosen-select" id="q4">
+    <select data-placeholder="" class="picked" id="q4">
       <option value="0"></option>
       <option value="1">1. Red wine</option>
       <option value="2">2. Tea. Earl Grey Hot</option>
@@ -91,7 +91,7 @@
 
     <h3><strong>Question 5</strong></h3>
     <h4>What is your greates fear?</h4>
-    <select data-placeholder="" class="chosen-select" id="q5">
+    <select data-placeholder="" class="picked" id="q5">
       <option value="0"></option>
       <option value="1">1. Clowns</option>
       <option value="2">2. Flying in an airplane</option>
@@ -106,7 +106,7 @@
 
     <h3><strong>Question 6</strong></h3>
     <h4>What is the best part about being on a Star Trek spaceship?</h4>
-    <select data-placeholder="" class="chosen-select" id="q6">
+    <select data-placeholder="" class="picked" id="q6">
       <option value="0"></option>
       <option value="1">1. I like the holodeck</option>
       <option value="2">2. Developing a good relationship with the crew</option>
@@ -121,7 +121,7 @@
 
     <h3><strong>Question 7</strong></h3>
     <h4>What is your favorit exercise activity?</h4>
-    <select data-placeholder="" class="chosen-select" id="q7">
+    <select data-placeholder="" class="picked" id="q7">
       <option value="0"></option>
       <option value="1">1. Basketball</option>
       <option value="2">2. Tai-Chi</option>
@@ -136,7 +136,7 @@
 
     <h3><strong>Question 8</strong></h3>
     <h4>Which militay service would you prefer to join?</h4>
-    <select data-placeholder="" class="chosen-select" id="q8">
+    <select data-placeholder="" class="picked" id="q8">
       <option value="0"></option>
       <option value="1">1. Coast Guard</option>
       <option value="2">2. National Guard</option>
@@ -151,7 +151,7 @@
 
     <h3><strong>Question 9</strong></h3>
     <h4>How do you prefer to travel?</h4>
-    <select data-placeholder="" class="chosen-select" id="q9">
+    <select data-placeholder="" class="picked" id="q9">
       <option value="0"></option>
       <option value="1">1. Spaceship</option>
       <option value="2">2. Transporter)</option>
@@ -165,7 +165,7 @@
 
     <h3><strong>Question 10</strong></h3>
     <h4>How would your friends discribe your outward personality?</h4>
-    <select data-placeholder="" class="chosen-select" id="q10">
+    <select data-placeholder="" class="picked" id="q10">
       <option value="0"></option>
       <option value="1">1. Proud of yourself</option>
       <option value="2">2. Outgoing</option>
@@ -188,8 +188,38 @@
 
   </div>
 
+  <!-- Button trigger modal
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Launch demo modal
+  </button> -->
+
+  <!-- Modal -->
+  <div id="exampleModalCenter" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Your match</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2 id="newFriend"></h2>
+          <img id="newFriendPhoto" src="#">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
@@ -199,37 +229,72 @@
 
   <script>
 
-    $("#submit").on("click", function(){
-      console.log("You clicked a magic button!")
+    $("#submit").on("click", function () {
+      // when the user clicks submit then validate the form
+      function valid() {
 
-      var scores = {
-        name: "",
-        photo: "photoURL",
-        scores: [
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
-        ]
+        var tested = true;
+
+        $(".profile").each(function () {
+          //if the name or url (.profile) are empty  then it should return false
+          if ($(this).val() === "") {
+            tested = false;
+          }
+        });
+        //if the answers(.picked) are empty/blank then it will return false
+        $(".picked").each(function () {
+          if ($(this).val() === "") {
+            tested = false;
+          }
+        });
+        return tested;
       }
+      console.log("You clicked a magic button!")
+      // this will take in the users answers/values as they enter them. All info filled out on the form
+      if (valid()) {
+        var enter = {
+          name: $("#name").val(),
+          photo: $("photo").val(),
+          scores: [
+            $("#q1").val(), // 5,
+            $("#q2").val(), // 5,
+            $("#q3").val(), // 5,
+            $("#q4").val(), // 5,
+            $("#q5").val(), // 5,
+            $("#q6").val(), // 5,
+            $("#q7").val(), // 5,
+            $("#q8").val(), // 5,
+            $("#q9").val(), // 5,
+            $("#q10").val()  // 5,
+          ]
+        };
+        // this will connect to the website
+        var currentURL = window.location.origin;
+        var scores= scores;
+        //this ajax post data to friends api
+        $.post(currentURL + "/api/friends", enter, function (data) {
+          $("#newFriend").text(data.name);
+          $("#newFriendPhoto").attr("src", data.photo);
 
 
-      $.ajax({
-        method: "POST",
-        url: "/api/friends",
-        data: scores
-      }).then(function(data){
-        console.log(data)
-      })
+          //bootstrap this is suppose to pop-up on the screen
+           $("#exampleModalCenter").modal("toggle");
+          alert("It works");
+          console.log(currentURL)
+        });
 
-    })
 
+        // $.ajax({
+        //   method: "POST",
+        //   url: "/api/friends",
+        //   data: scores
+        // }).then(function (data) {
+        //   console.log(data)
+        // });
+      } else {
+        alert("Survey Incomplete");
+      } return false;
+    });
 
 
   </script>
