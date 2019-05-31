@@ -9,30 +9,30 @@ var friends = [
             5,
             1,
             3,
-            3,
             2,
+            5,
             4,
             5,
             1,
-        ]
+        ] //29
     },
 
 
     {
         "name": "Captain Jean-luc Picard",
-        "photo": "http://images2.fanpop.com/image/photos/12300000/Jean-Luc-Picard-jean-luc-picard-12366864-1659-2560.jpg",
+        "photo": "https://i.pinimg.com/originals/51/20/53/512053d1f6e1b0a532945b078a308eac.jpg",
         "scores": [
+            3,
+            1,
+            2,
+            2,
+            4,
+            3,
+            3,
             5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-        ]
+            1,
+            3,
+        ] //27
     },
 
 
@@ -46,11 +46,11 @@ var friends = [
             5,
             1,
             2,
-            3,
-            4,
-            4,
+            1,
+            1,
+            1,
             1
-        ]
+        ] //21
     },
 
 
@@ -69,7 +69,7 @@ var friends = [
             4,
             1,
             2
-        ]
+        ]  //25
     },
 
 
@@ -78,35 +78,35 @@ var friends = [
         "name": "Captain Jonathan Archer",
         "photo": "https://wiki.fed-space.com/images/thumb/e/e0/JonathanArcher2155.jpg/200px-JonathanArcher2155.jpg",
         "scores": [
-            3,
+            1,
             2,
             3,
-            5,
+            2,
             4,
-            2,
+            1,
+            1,
             1,
             4,
-            3,
             1
-        ]
+        ] //22
     },
 
 
  {
         "name": "Almost Captain Michael Burnham",
-        "photo": "https://cdn.comicsverse.com/wp-content/uploads/sites/6/2018/02/dsc-110-rev-captburnham.jpg",
+        "photo": "https://pbs.twimg.com/profile_images/955773833658683394/ZpWZchj3_400x400.jpg",
         "scores": [
-            1,
             2,
-            3,
+            4,
+            5,
+            5,
             4,
             5,
             2,
             4,
-            2,
             4,
-            1
-        ]
+            5
+        ] //40
     }
 
 
