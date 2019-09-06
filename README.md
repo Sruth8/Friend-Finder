@@ -11,13 +11,15 @@ Technologies Used
 -HTML
 -Bootstrap
 
+Github deployed site
 
+https://sruth8.github.io/Friend-Finder/
 
 This app is also deployed to Heroku. check it out here 
 
 
 
-To run this on you locally;
+To run this locally;
 1. clone the app
 2. run npm install
 3. set PORT 8080
