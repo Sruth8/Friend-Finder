@@ -1,6 +1,6 @@
 # Friend-Finder
 
-This  application is a friend aka Captain matching app. The user must anwser all 10 questions in this survey. When the survey is submitted, the closest match to the users total score will return the Captain that will be there friend. The score is set with the lowest absolute difference for all ten question combined.
+This  application is a friend or Captain matching app. The user must anwser all 10 questions in this survey. When the survey is submitted, the closest match to the users total score will return the Captain that will be there friend. The score is set with the lowest absolute difference for all ten question combined.
  
 Technologies Used
 
@@ -17,7 +17,7 @@ https://sruth8.github.io/Friend-Finder/
 
 This app is also deployed to Heroku. check it out here 
 
-
+https://pacific-dusk-61218.herokuapp.com/
 
 To run this locally;
 1. clone the app
