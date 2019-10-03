@@ -4,12 +4,12 @@ This  application is a friend or Captain matching app. The user must anwser all 
  
 Technologies Used
 
--JavaScript
--jQuery
--node.js
--Express.js
--HTML
--Bootstrap
+* JavaScript
+* jQuery
+* node.js
+* Express.js
+* HTML
+* Bootstrap
 
 Github deployed site
 
