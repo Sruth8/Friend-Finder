@@ -29,4 +29,6 @@ To run this locally;
 Once the app is stating "App listening on PORT: 8080", then it should run in your browser as localhost:8080 
 
 	
-![Image of Friend Finder](FF-captain.png)
+![Image of Friend Finder](/images/FF-captain.png)
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
