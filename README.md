@@ -30,5 +30,3 @@ Once the app is stating "App listening on PORT: 8080", then it should run in you
 
 	
 ![Image of Friend Finder](/images/FF-captain.png)
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
